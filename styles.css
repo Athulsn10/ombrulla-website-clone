@@ -1,0 +1,110 @@
+@import 'swiper/swiper-bundle.min.css';
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #3779fd;
+  }
+    
+  ::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: #ffffff;
+  }
+  
+
+.nav-link {
+    color: #333; /* Default text color */
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease; /* Smooth transition for color changes */
+}
+.nav-link:hover {
+    color: #004eff; /* Text color on hover */
+}
+
+.btn{
+    background-color: #004eff; 
+    color: white;
+}
+
+.btn:hover{
+    background-color: transparent;
+    border: 2px;
+    border-color: black;
+    color: #004eff;
+}
+.watch-video{
+    color: black;
+}
+.watch-video:hover{
+    color: #004eff;
+}
+.img-ai img{
+    border-radius: 37% 63% 51% 49% / 52% 51% 49% 48%  ;
+    height: 490px;
+    width: 480px;
+}
+/* desktop */
+@media only screen and (min-width: 768px) {
+    .img-ai img {
+        height: 490px;
+        width: 480px;
+    }
+
+    .bg-div {
+        height: 590px;
+    }
+
+    .btn-white {
+        background-color: transparent;
+        border: 1px solid rgb(255, 255, 255);
+        color: white;
+    }
+
+    .btn-white:hover {
+        color: black;
+    }
+    .swiper-container {
+        padding: 20px;
+    }
+    
+    .swiper-slide {
+        min-width: 200px;
+        box-sizing: border-box;
+    }
+    
+    .swiper-slide img {
+        width: 150px;
+        height: auto;
+    }
+}
+/* mobile */
+@media only screen and (max-width: 767px) {
+    .img-ai img{
+        height: 290px;
+        width: 280px;
+        margin-left: 20px;
+    }
+    .bg-div{
+        height: fit-content;
+        margin-top: 150px;
+    }
+    .btn-white{
+        background-color: #ffffff;
+        color: #004eff;
+        font-weight: 300;
+    }
+    .swiper-slide {
+        min-width: 50px;
+        box-sizing: border-box;
+        
+    }
+    
+    .swiper-slide img {
+        width: 50px;
+        height: auto;
+    }
+    
+}
+
