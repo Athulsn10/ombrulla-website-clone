@@ -108,3 +108,40 @@
     
 }
 
+/* shapes */
+@keyframes sliderShape {
+    0% {
+        border-radius: 62% 47% 82% 35%/45% 45% 80% 66%;
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        border-radius: 30% 75% 20% 70%/80% 40% 60% 20%;
+        transform: scale(1.1);
+        opacity: 0.8;
+    }
+    100% {
+        border-radius: 62% 47% 82% 35%/45% 45% 80% 66%;
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+.shape1 {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    border-radius: 62% 47% 82% 35%/45% 45% 70% 66%;
+    will-change: border-radius, transform, opacity;
+    animation: sliderShape 7s linear infinite;
+    -webkit-animation: sliderShape 5s linear infinite;
+}
+.shape2 {
+    position: absolute;
+    width: 480px;
+    height: 480px;
+    border-radius: 62% 47% 82% 35%/45% 45% 70% 66%;
+    will-change: border-radius, transform, opacity;
+    animation: sliderShape 5s linear infinite;
+    -webkit-animation: sliderShape 7s linear infinite;
+    rotate: 180deg;
+}
